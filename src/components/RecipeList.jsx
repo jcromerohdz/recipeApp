@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchAllRecipes } from '../actions';
-// import UserHeader from './UserHeader';
+import Recipe from './Recipe';
 
 class RecipeList extends React.Component {
   componentDidMount() {
@@ -13,9 +13,7 @@ class RecipeList extends React.Component {
       return this.props.recipes.map(meal => {
         return (
           <div key={meal.idMeal}>
-            <h1>{`Recipe Name: ${meal.strMeal}`}</h1>
-            <img src={meal.strMealThumb} alt="" />
-            <h2>{`Category: ${meal.strCategory}`}</h2>
+            <Recipe meal={meal} />
           </div>
         );
       });

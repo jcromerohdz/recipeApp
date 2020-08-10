@@ -9,6 +9,16 @@ const fetchAllRecipes = () => async dispatch => {
   });
 };
 
+const filterByIngredient = (ingredient) => async dispatch => {
+  const response = await themealdbAPI.get(`/filter.php?i=${ingredient}`);
+
+  dispatch({
+    type: 'FILTER_BY_INGREDIENT',
+    payload: response.data,
+  });
+};
+
 export {
   fetchAllRecipes,
+  filterByIngredient,
 };
