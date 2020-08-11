@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { fetchAllRecipes } from '../actions';
 import Recipe from './Recipe';
 
+
 class RecipeList extends React.Component {
   componentDidMount() {
     this.props.fetchAllRecipes();
@@ -12,7 +13,7 @@ class RecipeList extends React.Component {
     if (this.props.recipes) {
       return this.props.recipes.map(meal => {
         return (
-          <div key={meal.idMeal}>
+          <div className="col-md-4 col-sm-12" itemSpace key={meal.idMeal}>
             <Recipe meal={meal} />
           </div>
         );
@@ -27,7 +28,7 @@ class RecipeList extends React.Component {
 
   render() {
     return (
-      <div className="ui relaxed divided list">{this.renderList()}</div>
+      <div className="row itemeCenter mdItemCenter">{this.renderList()}</div>
     );
   }
 }

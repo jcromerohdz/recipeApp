@@ -1,10 +1,17 @@
 import React from 'react';
 
 const Recipe = (props) => (
-  <div>
-    <h1>{`Recipe Name: ${props.meal.strMeal}`}</h1>
-    <img src={props.meal.strMealThumb} alt="" />
-    <h2>{`Category: ${props.meal.strCategory}`}</h2>
+  <div className="card">
+    <img
+      src={props.meal.strMealThumb}
+      className="card-img-top"
+      alt={props.meal.strMeal}
+    />
+    <div className="card-body lightBg">
+      <p className="card-text">
+        {`Recipe Name: ${props.meal.strMeal}`} <a href="#">here</a>
+      </p>
+    </div>
   </div>
 );
 
