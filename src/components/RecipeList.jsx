@@ -13,7 +13,7 @@ class RecipeList extends React.Component {
     if (this.props.recipes) {
       return this.props.recipes.map(meal => {
         return (
-          <div className="col-md-4 col-sm-12" itemSpace key={meal.idMeal}>
+          <div className="col-md-4 col-sm-12 mt-2" itemSpace key={meal.idMeal}>
             <Recipe meal={meal} />
           </div>
         );
@@ -28,7 +28,7 @@ class RecipeList extends React.Component {
 
   render() {
     return (
-      <div className="row itemeCenter mdItemCenter">{this.renderList()}</div>
+      <div className="row itemeCenter mdItemCenter mt-3">{this.renderList()}</div>
     );
   }
 }

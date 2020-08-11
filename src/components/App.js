@@ -1,20 +1,19 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import RecipeList from './RecipeList';
 import SearchBox from './SearchBox';
-import { render } from 'react-dom';
 
+// eslint-disable-next-line react/prefer-stateless-function
 class App extends React.Component {
-  render(){
+  render() {
     return (
-      <div className="">
-        <SearchBox placeholder='Search by: Chicken or Beef or White Fish or Sugar'/>
+      <div className="App">
+        <SearchBox placeholder="Search by: Chicken or Beef or White Fish or Sugar" />
         <div className="container-fluid">
           <RecipeList />
         </div>
       </div>
     );
   }
-};
+}
 
 export default App;

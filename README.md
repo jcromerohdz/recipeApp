@@ -1,4 +1,29 @@
+## Project specification
+The project you are going to build for the React capstone is based on a catalogue of recipes. It is not an app to help you make a recipe because we don't want you to build the prepare and share screens. We just want you to build a catalogue, that is, a browsable list of items that you can filter and access to the details of one item. We provide a sample design that you can follow, but in this capstone project you are not required to follow the design guidelines but use them as an inspiration.
+
+in the fallowing link you can find more about project specification.
+[here](https://www.notion.so/Catalogue-of-Recipes-ea589778a95f47fa98034d99d4016d2b)
+
+You can see the live version [here](https://mb-bookstore.herokuapp.com/)
+
+## This project use the following tools
+- Node.js
+- React
+- React-DOM
+- React-Redux
+- Redux
+- React-Create-App
+- Axios
+_ React-Router-Dom
+- npm
+- Yarn
+- CSS
+- ES6
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
 
 ## Available Scripts
 
@@ -67,4 +92,14 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-# Featureskk branch
+
+## Project Features
+The webapp should have at least 2 types of pages:
+- one page with a list of items that could be filtered by some parameters; in the example project, it's a list of recipes that can be filtered by ingredients (shrimp, broccoli, etc.)
+- one page for the item details; in this example, the product detail page (Preview Recipe)
+
+While developing the project, you should follow the best practices that you already learned in the previous projects, like setting-up a code linter, using gitflow, testing business logic, writing good commit messages and an informative README. Also, you must strive to use best practices in React & Redux development, like using a nice folder/files structure with good names and separate different types of components and services.
+
+## Author
+Christian Romero Hdz.  https://github.com/jcromerohdz
+
