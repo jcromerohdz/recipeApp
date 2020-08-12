@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable import/no-named-as-default-member */
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchAllRecipes } from '../actions';
@@ -20,7 +21,7 @@ class SearchBox extends React.Component {
   render() {
     return (
       <nav className="navbar navbar-dark bg-dark">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand">
           Recipes
         </a>
         <div className="input-group">

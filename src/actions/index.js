@@ -9,7 +9,7 @@ const fetchAllRecipes = (ingredient = 'Sugar') => async dispatch => {
   });
 };
 
-const filterByIngredient = (ingredient) => async dispatch => {
+const filterByIngredient = ingredient => async dispatch => {
   const response = await themealdbAPI.get(`/filter.php?i=${ingredient}`);
 
   dispatch({
