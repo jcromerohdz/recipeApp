@@ -1,7 +1,6 @@
 import themealdbAPI from '../api/themealdbAPI';
 
 const fetchAllRecipes = (ingredient = 'Sugar') => async dispatch => {
-  console.log(ingredient);
   const response = await themealdbAPI.get(`/filter.php?i=${ingredient}`);
 
   dispatch({

@@ -11,7 +11,7 @@ class Recipe extends Component {
           className="card-img-top"
           alt={this.props.meal.strMeal}
         />
-        <div className="card-body lightBg">
+        <div className="card-body">
           <p className="card-text">
             {`Recipe Name: ${this.props.meal.strMeal}`}
             {' '}

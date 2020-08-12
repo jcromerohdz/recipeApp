@@ -29,7 +29,7 @@ class RecipeDetail extends Component {
           className="card-img-top"
           alt={this.state.recipe.strMeal}
         />
-        <div className="card-body lightBg">
+        <div className="card-body">
           <h3>Ingredients: </h3>
           <ul>
             <li>{this.state.recipe.strIngredient1}</li>
@@ -50,7 +50,7 @@ class RecipeDetail extends Component {
       <div>Loading Recipe...</div>
     );
     return (
-      <div ClassName="container-fluid">
+      <div className="container-fluid">
         {recipe}
       </div>
     );
