@@ -4,7 +4,7 @@ The project you are going to build for the React capstone is based on a catalogu
 in the fallowing link you can find more about project specification.
 [here](https://www.notion.so/Catalogue-of-Recipes-ea589778a95f47fa98034d99d4016d2b)
 
-You can see the live version [here](https://mb-bookstore.herokuapp.com/)
+You can see the live version [here](https://recipeappcrh.herokuapp.com/)
 
 ## This project use the following tools
 - Node.js
