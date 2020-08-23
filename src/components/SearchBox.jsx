@@ -18,13 +18,20 @@ class SearchBox extends React.Component {
     })
   }
 
+  onSubmit = (e) => {
+    e.preventDefault();
+    const ingredient = this.state.input;
+
+    this.props.fetchAllRecipes(ingredient);
+  }
+
   render() {
     return (
       <nav className="navbar navbar-dark bg-dark">
         <a className="navbar-brand">
           Recipes
         </a>
-        <div className="input-group">
+        <form onSubmit={this.onSubmit} className="input-group">
           <input
             type="text"
             className="form-control"
@@ -37,21 +44,11 @@ class SearchBox extends React.Component {
               <i className="fa fa-search" />
             </button>
           </div>
-        </div>
+        </form>
       </nav>
     );
   }
 }
 
-const mapStateToProps = state => ({
-    ...state
-})
-const mapDispatchToProps = dispatch => {
-  return {
-  query: (input) => dispatch(fetchAllRecipes(input))
 
-  }
-}
-
-
-export default connect(mapStateToProps, mapDispatchToProps)(SearchBox);
+export default connect(null, { fetchAllRecipes })(SearchBox);

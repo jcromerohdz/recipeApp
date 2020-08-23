@@ -1,5 +1,4 @@
-import/no-named-as-default-member
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import themealAPI from '../api/themealdbAPI';
 import { Link } from 'react-router-dom';
 
