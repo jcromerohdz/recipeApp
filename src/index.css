@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ddd;
+}
+
+.navbar-brand {
+  color: #9d9d9d !important;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: #fff !important;
+}

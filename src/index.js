@@ -12,6 +12,8 @@ import App from './components/App';
 import RecipeDetail from './components/RecipeDetail';
 import reducers from './reducers';
 
+import './index.css';
+
 const store = createStore(
   reducers,
   compose(

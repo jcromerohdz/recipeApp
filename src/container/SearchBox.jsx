@@ -28,7 +28,7 @@ class SearchBox extends React.Component {
   render() {
     return (
       <nav className="navbar navbar-dark bg-dark">
-        <a className="navbar-brand">
+        <a className="navbar-brand myBrand">
           Recipes
         </a>
         <form onSubmit={this.onSubmit} className="input-group">
