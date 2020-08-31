@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { fetchAllRecipes } from '../actions';
 import Recipe from '../components/Recipe';
 
-
 class RecipeList extends React.Component {
   componentDidMount() {
     this.props.fetchAllRecipes();
