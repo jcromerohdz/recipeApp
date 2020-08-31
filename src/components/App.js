@@ -1,6 +1,6 @@
 import React from 'react';
-import RecipeList from './RecipeList';
-import SearchBox from './SearchBox';
+import RecipeList from '../container/RecipeList';
+import SearchBox from '../container/SearchBox';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class App extends React.Component {
