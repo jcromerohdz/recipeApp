@@ -13,9 +13,7 @@ class Recipe extends Component {
         />
         <div className="card-body">
           <p className="card-text">
-            {`Recipe Name: ${this.props.meal.strMeal}`}
-            {' '}
-            more
+            {`Recipe Name: ${this.props.meal.strMeal}, more detail `}
             <Link to={`/${this.props.meal.idMeal}`}>here </Link>
           </p>
         </div>
